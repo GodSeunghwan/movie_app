@@ -5,15 +5,15 @@ import './Movie.css';
 function Movie({ title, poster, genres, synopsis }) {
     return (
         <div className="Movie">
-            <div className="Movie_Calumns">
+            <div className="Movie__Column">
                 <MoviePoster poster={poster} alt={title} />
             </div>
-            <div className="Movie_Columns">
+            <div className="Movie__Column">
                 <h1>{title}</h1>
-                <div className="Movie_Genres">
+                <div className="Movie__Genres">
                     {genres.map((genre, index) => <MovieGenre genre={genre} key={index} />)}
                 </div>
-                <p className="Movie_Synopsis">
+                <p className="Movie__Synopsis">
                     {synopsis}
                 </p>
             </div>
@@ -27,14 +27,14 @@ function MoviePoster({ poster,  alt}) {
             src={poster}
             title={alt}
             alt={alt}
-            className="Movie_Poster"
+            className="Movie__Poster"
         />
     );
 }
 
 function MovieGenre({ genre }) {
     return (
-        <span className="Movie_Genre">{genre}</span>
+        <span className="Movie__Genre">{genre}</span>
     )
 }
 
