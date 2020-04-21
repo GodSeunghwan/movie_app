@@ -1,5 +1,5 @@
 ## Exam
-Check out the examples [https://godseunghwan.github.io/movie_app](here)!
+Check out the examples [here](https://godseunghwan.github.io/movie_app)!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
